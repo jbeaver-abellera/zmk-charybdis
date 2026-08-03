@@ -56,19 +56,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        toggle_mouse_layer {
-            bindings = <&tog 3>;
-            key-positions = <33 9>;
-        };
-
-        return_base_layer {
-            bindings = <&to 0>;
-            key-positions = <5 33>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -102,10 +90,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans             &trans &cpi_cycle 1 &cpi_cycle 3                             &trans  &trans  &trans  &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp LCLK          &mkp RCLK                                                    &trans  &trans  &trans  &trans
-&trans  &kp C_MUTE      &kp C_VOL_DN    &kp C_VOLUME_UP  &trans             &trans                                                       &trans  &trans  &trans  &trans
-                                        &trans           &trans     &trans
+&trans  &trans  &msc SCRL_UP  &trans          &trans                  &trans           &cpi_cycle 1  &cpi_cycle 3  &trans  &trans
+&trans  &trans  &trans        &msc SCRL_LEFT  &msc SCRL_DOWN          &msc SCRL_RIGHT  &mkp LCLK     &mkp RCLK     &trans  &trans
+&trans  &trans  &trans        &kp C_MUTE      &kp C_VOL_DN            &kp C_VOLUME_UP  &trans        &trans        &trans  &trans
+                              &trans          &trans          &trans                   &trans        &trans
             >;
         };
 
