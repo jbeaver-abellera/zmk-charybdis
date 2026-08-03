@@ -75,37 +75,37 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W              &kp E             &kp R                   &kp T                   &kp Y  &kp U                &kp I              &kp O               &kp P
-&hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LEFT_SHIFT F  &kp G                   &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RCTRL L  &hrm_right LALT SEMI
-&kp Z             &kp X              &kp C             &kp V                   &kp B                   &kp N  &lt 4 M              &kp COMMA          &kp PERIOD          &lt 5 SLASH
-                                                       &mt LSHIFT ESCAPE       &lt 1 SPACE  &lt 3 TAB         &mt LCTRL ENTER      &lt 2 BACKSPACE
+&kp Q       &kp W           &kp E        &kp R            &kp T                   &kp Y  &kp U        &kp I         &kp O       &kp P
+&mt LCMD A  &mt LEFT_ALT S  &mt LSHFT D  &mt LCTRL F      &kp G                   &kp H  &mt RCTRL J  &mt RSHFT K   &mt LALT L  &mt RCMD SEMI
+&kp Z       &kp X           &kp C        &kp V            &kp B                   &kp N  &kp M        &kp COMMA     &kp PERIOD  &lt 5 SLASH
+                                         &lt 1 BACKSPACE  &lt 2 SPACE  &lt 3 TAB         &lt 4 ENTER  &lt 5 ESCAPE
             >;
         };
 
-        Symbols {
+        Numbers {
             bindings = <
-&kp EXCL   &kp AT            &kp POUND     &kp DOLLAR   &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PIPE       &kp AMPERSAND  &kp ASTERISK       &kp CARET
-&kp GRAVE  &kp SINGLE_QUOTE  &kp KP_MINUS  &kp KP_PLUS  &kp LEFT_BRACE                &kp RIGHT_BRACE        &kp UNDER      &kp KP_EQUAL   &kp DOUBLE_QUOTES  &kp TILDE
-&none      &none             &trans        &kp PERCENT  &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp BACKSLASH  &trans         &trans             &trans
-                                           &trans       &trans                &trans                         &trans         &trans
+&kp GRAVE             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0             &trans  &trans     &trans     &trans        &trans
+&kp NON_US_BACKSLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &trans  &kp LCTRL  &kp LSHFT  &kp LEFT_ALT  &kp LCMD
+&kp SQT               &kp N7        &kp N8        &kp N9        &kp EQUAL          &trans  &trans     &trans     &trans        &trans
+                                                  &trans        &trans     &trans          &trans     &trans
             >;
         };
 
-        Navigation_numbers {
+        F-Keys {
             bindings = <
-&kp N1    &kp N2     &kp N3    &kp N4     &kp N5            &kp N6    &kp N7                       &kp N8                       &kp N9                  &kp N0
-&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp TAB           &kp LEFT  &hrm_right RIGHT_SHIFT DOWN  &hrm_right RIGHT_COMMAND UP  &hrm_right RCTRL RIGHT  &kp RIGHT_ALT
-&trans    &trans     &trans    &trans     &trans            &trans    &trans                       &trans                       &trans                  &trans
-                               &kp F1     &kp F5   &kp F12            &trans                       &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &trans          &trans  &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT
+&kp F5  &kp F6   &kp F7   &kp F8   &trans          &trans  &kp LCTRL  &kp LSHFT  &kp LEFT_ALT  &kp LCMD
+&kp F9  &kp F10  &kp F11  &kp F12  &trans          &trans  &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT
+                          &trans   &trans  &trans          &trans     &trans
             >;
         };
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5                        &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
-&trans      &trans             &trans           &trans  &mkp LCLK                    &mkp RCLK                                                    &trans  &trans  &trans  &trans
-&trans      &trans             &trans           &trans  &trans                       &trans                                                       &trans  &trans  &trans  &trans
-                                                &trans  &kp F11    &kp RC(UP_ARROW)
+&trans  &trans          &msc SCRL_UP    &trans           &trans             &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp LCLK          &mkp RCLK                                                    &trans  &trans  &trans  &trans
+&trans  &kp C_MUTE      &kp C_VOL_DN    &kp C_VOLUME_UP  &trans             &trans                                                       &trans  &trans  &trans  &trans
+                                        &trans           &trans     &trans
             >;
         };
 
@@ -124,15 +124,6 @@
 &trans       &trans      &trans  &trans  &trans          &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &trans
 &trans       &trans      &trans  &trans  &trans          &trans        &trans          &trans        &trans        &trans
                                  &trans  &trans  &trans                &trans          &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans          &trans  &trans
             >;
         };
     };
