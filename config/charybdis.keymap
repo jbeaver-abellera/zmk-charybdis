@@ -90,10 +90,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &msc SCRL_UP  &trans          &trans                  &trans           CPI_CYCLE_FORWARD_BINDING  CPI_CYCLE_BACKWARD_BINDING  &trans  &trans
-&trans  &trans  &trans        &msc SCRL_LEFT  &msc SCRL_DOWN          &msc SCRL_RIGHT  &mkp LCLK     &mkp RCLK     &trans  &trans
-&trans  &trans  &trans        &kp C_MUTE      &kp C_VOL_DN            &kp C_VOLUME_UP  &trans        &trans        &trans  &trans
-                              &trans          &trans          &trans                   &trans        &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans             &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp LCLK          &mkp RCLK                                                    &trans  &trans  &trans  &trans
+&trans  &kp C_MUTE      &kp C_VOL_DN    &kp C_VOLUME_UP  &trans             &trans                                                       &trans  &trans  &trans  &trans
+                                        &trans           &trans     &trans
             >;
         };
 
@@ -108,10 +108,10 @@
 
         keyboard_controls {
             bindings = <
-&bootloader  &sys_reset  &trans  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans       &trans      &trans  &trans  &trans          &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_NXT    &bt BT_PRV    &trans
-&trans       &trans      &trans  &trans  &trans          &trans        &trans          &trans        &trans        &trans
-                                 &trans  &trans  &trans                &trans          &trans
+&bootloader  &sys_reset  &trans  &trans  &trans          &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&trans       &trans      &trans  &trans  &trans          &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV     &trans
+&trans       &trans      &trans  &trans  &trans          &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+                                 &trans  &trans  &trans                 &trans          &trans
             >;
         };
     };
