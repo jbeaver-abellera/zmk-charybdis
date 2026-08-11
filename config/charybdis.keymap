@@ -92,9 +92,9 @@
 
         Mouse {
             bindings = <
-&trans          &trans           &msc SCRL_UP  &trans     &trans          &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &msc SCRL_LEFT
-&msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp LCLK     &mkp RCLK  &trans          &trans                                                       &trans  &trans  &trans  &kp C_MUTE
-&kp C_VOL_DN    &kp C_VOLUME_UP  &trans        &trans     &trans          &trans                                                       &trans  &trans  &trans  &trans
+&trans          &trans           &msc SCRL_UP  &trans     &trans          &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans     &trans     &trans    &trans
+&msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp LCLK     &mkp RCLK  &trans          &trans                                                       &kp LCTRL  &kp LSHFT  &kp LALT  &kp LEFT_GUI
+&kp C_VOL_DN    &kp C_VOLUME_UP  &trans        &trans     &trans          &trans                                                       &trans     &trans     &trans    &trans
                                                &trans     &trans  &trans
             >;
         };
